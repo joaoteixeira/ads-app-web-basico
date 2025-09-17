@@ -1,0 +1,49 @@
+<html lang='pt-br'>
+
+<head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <title>Meu Primeiro App Web</title>
+    <!-- Bootstrap CSS -->
+    <link href='/css/bootstrap.min.css' rel='stylesheet' />
+</head>
+
+<body class='bg-dark text-light'>
+
+    <div class='container vh-100 d-flex flex-column justify-content-center'>
+        <!-- Título -->
+        <h1 class='mb-3 text-center'>Entre em Contato</h1>
+
+        <div class="row">
+            <div class="col-8 offset-2">
+                <form action="/contato-enviar" method="post">
+                    <div class="mb-3">
+                        <label for="nome" class="form-label lead">Nome</label>
+                        <input type="text" class="form-control" id="nome" name="nome" placeholder="Informe seu nome">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label lead">E-mail</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensagem" class="form-label lead">Mensagem</label>
+                        <textarea class="form-control" id="mensagem" name="mensagem" rows="6"></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <button class="btn btn-primary" type="submit">Enviar</button>
+                        <button class="btn btn-sm btn-warning" type="reset">Limpar Formulário</button>
+
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src='/js/bootstrap.bundle.min.js'></script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+body {
+    background-color: black;
+    color: #FFF;
+}
+
+.titulo {
+    font-family: 'Courier New', Courier, monospace;
+}
+.imagem {
+    position: absolute;
+    right: 5px;
+    top: -30px;
+}
+
+.imagem img {
+    width: 60px;
+}
