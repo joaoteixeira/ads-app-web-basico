@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Chamados</title>
+
+    <link href='/css/bootstrap.min.css' rel='stylesheet' />
+</head>
+<body>
+    <div class="container mb-5">
+        <h1>Chamados</h1>
+
+        <a href="/chamados/novo" class="btn btn-sm btn-primary">Criar Chamado</a>
+
+        {{#unless listaChamados}}
+        <p class="mt-3"> Nenhum chamado encontrado!</p>
+        {{/unless}}
+
+        {{#if listaChamados}}
+        <table class="table mt-3">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Título</th>
+                    <th>Data Abertura</th>
+                    <th>Situação</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each listaChamados}}
+                <tr>
+                    <td>{{this.id}}</td>
+                    <td>{{this.titulo}}</td>
+                    <td>{{this.dataAbertura}}</td>
+                    <td>{{this.situacao}}</td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+        {{/if}}
+    </div>
+</body>
+</html>
